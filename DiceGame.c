@@ -4,8 +4,12 @@
 int main(void){
         int i;
         int sum=0;
+        char name[30];
         srand(time(NULL));
 
+        printf("What is your name?\n");
+        scanf("%s", name);
+        printf("Hello,%s!\n", name);
         for(i=0;i<2;i++){
                 int r=rand();
                 printf("Die %d: %d\n",i+1,(r%6)+1);
